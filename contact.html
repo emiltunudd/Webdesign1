@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <!--Sidans titel-->
+    <title> TechIT </title>
+</head>
+
+<body>
+
+    <div class="navbarbackground">
+        <nav class="nav">
+            <!-- Logga för den allra mest vänstra delen av navigeringsbaren-->
+            <a href="index.html" class="nav_logo"><img id="logo" src="images/logo.png" alt="TechIT Logga"></a>
+
+            <!-- Navigeringsbaren -->
+            <div class="nav_menucontainer">
+                <div class="nav_listcontainer" tabindex="0">
+                    <ul class="nav_menu" id="navmenu">
+                        <li class="nav_item">
+                            <a href="index.html" class="nav_link">HEM</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="about.html" class="nav_link">OM OSS</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="vacancies.html" class="nav_link">LEDIGA JOBB</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="whoarewe.html" class="nav_link">VILKA ÄR VI?</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="contact.html" class="nav_link">KONTAKTA OSS</a>
+                        </li>
+                    </ul>
+                    <!-- Hamburgermeny-->
+                    <a id="hamburger" href="#navmenu" title="menu" class="nav_hamburger">
+                        <i class="fa fa-bars fa-3x " id="hamburgermenu"></i>
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+    <!-- Texten som kommer först på sidan-->
+    <section class="aboutus">
+        <h1>Kontakta oss</h1>
+        <p> Har du en fråga om något? Vill du veta mer om våra tjänster? Tveka inte att höra av dig</p>
+
+
+    </section>
+    <!--Container för formuläret-->
+    <div class="contact_container">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <input type="text" class="field" placeholder="Ditt namn">
+                <input type="text" class="field" placeholder="Din mailadress">
+                <input type="text" class="field" placeholder="Telefonnummer">
+                <textarea placeholder="Meddelande" class="field"></textarea>
+                <!--Knapp för att skicka formuläret-->
+                <button class="btn">Skicka</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

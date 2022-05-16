@@ -1,0 +1,560 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    /* Styling för hela sidan */
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    /* Första headern med bakgrundsbild */
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.nav {
+    /* Styling för navigeringsbaren */
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav img {
+    /* Inställningar för loggan som är i samma våglängd som navbaren */
+    width: 150px;
+}
+
+.nav_listcontainer {
+    /* Styling för navbaren */
+    flex: 1;
+    text-align: right;
+}
+
+.nav_listcontainer ul li {
+    /* Styling för navbaren */
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav_listcontainer ul li a {
+    /* Styling för navbaren */
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav_listcontainer ul li::after {
+    /* Styling för navbaren */
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #38effc;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav_listcontainer ul li:hover::after {
+    /* Styling för navbaren */
+    width: 100%;
+}
+
+#hamburgermenu {
+    /* Styling för hamburgarmenyn */
+    padding-top: 5px;
+}
+
+.nav_hamburger {
+    /* Styling för hamburgarmenyn */
+    color: white;
+    min-width: 32px;
+    min-height: 32px;
+    transition: opacity 80ms linear;
+    /* Gömmer hamburgermenyn på större skärmar */
+    display: none;
+    opacity: 0;
+}
+
+.nav_menu {
+    /* Styling för hamburgarmenyn */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.nav_item {
+    /* Styling för hamburgarmenyn */
+    margin-right: 1rem;
+}
+
+.nav_link {
+    /* Styling för hamburgarmenyn */
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+}
+
+.text-box {
+    /* Styling för text på framsidan */
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    /* Styling för text på framsidan */
+    font-size: 62px;
+}
+
+.text-box h2 {
+    /* Styling för text på framsidan */
+    color: black;
+    font-size: 30px;
+}
+
+#h2-text {
+    font-size: 36px;
+}
+
+#h2-text2 {
+    font-size: 36px;
+}
+
+.paragraph {
+    /* Styling för text där bakgrunden är vit */
+    color: black;
+}
+
+.text-box p {
+    /* Styling för p text */
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.home_button_contact {
+    /* Styling för kontakt-knapp på framsidan */
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.home_button_contact:hover {
+    /* Styling för kontakt-knapp på framsidan */
+    border: 1px solid #13676d;
+    background: #0b5d63;
+    transition: 1s;
+}
+
+.navbarbackground {
+    /* Styling för navbar-bakgrund på andra sidor än första */
+    background-color: rgba(4, 9, 30, 0.89);
+    width: 100%;
+    height: 200px;
+}
+
+
+/*--- About us-del ---*/
+
+.aboutus {
+    /* Styling för om oss-sidan */
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    /* Styling för h1 */
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    /* Styling för p */
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    /* Styling för textboxar på framsidan och om oss-sidan */
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutus-col {
+    /* Styling för textboxar på framsidan och om oss-sidan */
+    flex-basis: 31%;
+    background: #5b99b62a;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+h3 {
+    /* Styling för h3 */
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.aboutus-col:hover {
+    /* Skugga för aboutus-kolumnen när man hoverar text-boxarna. */
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/*--- Lokaler-del ---*/
+
+.locations {
+    /* Styling för text på lokaler-delen */
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.locations-col {
+    /* Styling för bildrutor på lokaler-delen */
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.locations-col img {
+    /* Styling för bilder i lokaler-delen */
+    width: 100%;
+    display: block;
+}
+
+.layer {
+    /* Styling för bildrutor på lokaler-delen */
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    /* Lägger till en dov färg då man hoverar över bildrutorna */
+    background: #0b5d6362;
+}
+
+.layer h3 {
+    /* Styling & animation för text på lokaler-delen */
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    /* Styling & animation för text på lokaler-delen */
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+/*--- Lediga jobb-del ---*/
+
+.career {
+    /* Styling för text på lediga jobb-delen */
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.career-col1 {
+    /* Styling för textrutor på lediga jobb-delen */
+    flex-basis: 31%;
+    background: #17729cbb;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.career-col2 {
+    /* Styling för textrutor på lediga jobb-delen*/
+    flex-basis: 31%;
+    background: #55e7afc2;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.career-col3 {
+    /* Styling för textrutor på lediga jobb-delen */
+    flex-basis: 31%;
+    background: #37c56ec9;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.career-col1:hover {
+    /* Styling för text på lediga jobb-delen */
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.career-col2:hover {
+    /* Styling för text på lediga jobb-delen */
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.career-col3:hover {
+    /* Styling för text på lediga jobb-delen */
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+#jobspic {
+    /* Styling för bilden på lediga jobb-delen */
+    max-width: 100%;
+    height: 50%;
+    width: auto;
+    margin: auto;
+    display: block;
+}
+
+
+/*--- Vilka är vi-del ---*/
+
+.whoarewe {
+    /* Styling för text på vilka är vi-delen */
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.whoarewe-col {
+    /* Styling för textruta på vilka är vi-delen */
+    flex-basis: 31%;
+    background: #094561bb;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+
+/*--- Kontakta oss-del ---*/
+
+.contact_body {
+    /* Styling för kontakt-sidan */
+    height: 100vh;
+    width: 100%;
+}
+
+.contact_container {
+    /* Styling för kontakt-sidans container */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.contact_container:after {
+    /* Styling för kontakt-sidans container */
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url("images/bgg.jpg") no-repeat center;
+    background-size: cover;
+    filter: blur(50px);
+    z-index: -1;
+}
+
+.contact-box {
+    /* Styling för kontakt-sidans container */
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.left {
+    /* Styling för kontakt-sidans ruta, vänstra sidan */
+    background: url("images/bg.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.right {
+    /* Styling för kontakt-sidans ruta, högra sidan */
+    padding: 25px 40px;
+}
+
+.field {
+    /* Styling för kontakt-sidans ruta, fälten */
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+
+.field:hover {
+    /* Styling för kontakt-sidans ruta, fälten */
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    /* Styling för kontakt-sidans ruta, textruta för meddelande*/
+    min-height: 150px;
+}
+
+.btn {
+    /* Styling för kontakt-sidans ruta, skicka-knappen*/
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #2ecc71;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    /* Styling för kontakt-sidans ruta, skicka-knappens hover*/
+    background-color: #27ae60;
+}
+
+.field:focus {
+    /* Styling för kontakt-sidans ruta, focus för fälten*/
+    border: 2px solid rgba(30, 85, 250, 0.47);
+    background-color: #fff;
+}
+
+
+/* Gör hemsidan responsiv för enheter med max 700px breda skärmar */
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        /* Ändrar storleken på texten så att den passar mindre enheter */
+        font-size: 20px;
+    }
+    .nav_hamburger {
+        /* Visar hamburgermenyn då enhetens skärm är mindre. */
+        display: flex;
+        opacity: 1;
+    }
+    .nav_menu {
+        /* Flyttar bort den andra menyn så den inte är synlig*/
+        opacity: 0;
+        position: fixed;
+        visibility: hidden;
+        top: -1000px;
+        /* Styling för hamburgarmenyn */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #2f3f75;
+        background: rgba(255, 255, 255, 1);
+    }
+    .nav_listcontainer:focus .nav_menu,
+    .nav_listcontainer:focus-within .nav_menu {
+        /* Klickfunktionalitet för hamburgermenyn */
+        position: absolute;
+        visibility: visible;
+        opacity: 1;
+        top: 2rem;
+        right: 1.5rem;
+    }
+    .nav_listcontainer:focus .nav_menu,
+    .nav_listcontainer:focus-within .nav_menu {
+        /* Styling för rutan inom hamburgarmenyn */
+        background: rgba(34, 30, 100, 0.918);
+        backdrop-filter: blur(10px);
+    }
+    .nav_item {
+        /* Styling för det som finns inuti hamburgarmenyn */
+        margin-right: 0;
+        padding: 0.5rem 1.5rem;
+    }
+    .container {
+        /* Styling för texten inuti hamburgarmenyn */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 2em 1.5em;
+        background: #fff;
+    }
+    .row {
+        flex-direction: column;
+    }
+    /* Kontakta oss-del */
+    .contact-box {
+        grid-template-columns: 1fr;
+    }
+    .left {
+        height: 200px;
+    }
+}

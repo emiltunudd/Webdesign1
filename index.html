@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Sidans titel-->
+    <title> TechIT </title>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="nav">
+            <!-- Logga för den allra mest vänstra delen av navigeringsbaren-->
+            <a href="#" class="nav_logo"><img id="logo" src="images/logo.png" alt="TechIT logga"></a>
+
+            <!-- Navigeringsbaren -->
+            <div class="nav_menucontainer">
+                <div class="nav_listcontainer" tabindex="0">
+                    <ul class="nav_menu" id="navmenu">
+                        <li class="nav_item">
+                            <a href="#" class="nav_link">HEM</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="about.html" class="nav_link">OM OSS</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="vacancies.html" class="nav_link">LEDIGA JOBB</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="whoarewe.html" class="nav_link">VILKA ÄR VI?</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="contact.html" class="nav_link">KONTAKTA OSS</a>
+                        </li>
+                    </ul>
+                    <!-- Hamburgermeny som visas vid mindre skärmar tack vare media-query i style.css -->
+                    <a id="hamburger" href="#navmenu" title="menu" class="nav_hamburger">
+                        <i class="fa fa-bars fa-3x" id="hamburgermenu"></i>
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+        <!-- Texten som kommer först på sidan-->
+        <div class="text-box">
+            <h1>Sveriges ledande IT-företag</h1>
+            <p>
+                TechIT är Sveriges ledande IT-företag som hjälper dig med alla dina IT-behov!
+            </p>
+            <a href="contact.html" class="home_button_contact">Kontakta oss för mer information!</a>
+        </div>
+
+    </div>
+
+    <!-- Om Oss-del -->
+    <section class="aboutus">
+        <!-- Texten som kommer först på sidan-->
+        <h2 id="h2-text">Om Oss</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <!-- De tre text-boxarna som kommer på första sidan-->
+        <div class="row">
+            <div class="aboutus-col">
+                <h3>Grundades</h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="aboutus-col">
+                <h3>Vår vision</h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="aboutus-col">
+                <h3>Våra framgångar</h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Lokaler-del -->
+
+    <section class="locations">
+        <h2 id="h2-text2">Vi har fina lokaler i dessa städer:</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <!-- Bilder som läggs in i rutorna på lokaler-delen-->
+        <div class="row">
+            <div class="locations-col">
+                <img src="images/stockholm.jpg" alt="Bild på Stockholm stad">
+                <div class="layer">
+                    <h3>STOCKHOLM</h3>
+                </div>
+            </div>
+            <div class="locations-col">
+                <img src="images/goteborg.jpg" alt="Bild på Göteborg stad">
+                <div class="layer">
+                    <h3>GÖTEBORG</h3>
+                </div>
+            </div>
+            <div class="locations-col">
+                <img src="images/uppsala.jpg" alt="Bild på Uppsala stad">
+                <div class="layer">
+                    <h3>UPPSALA</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
